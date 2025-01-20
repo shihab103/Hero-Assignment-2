@@ -40,6 +40,18 @@ nav .list ul li a{
     font-weight: 500;
     line-height: 30px;
 }
+.list ul li:nth-child(1) a {
+    color: rgb(254, 163, 1);
+  }
+.list ul li:nth-child(2) a{
+    color: rgb(1, 172, 253);
+  }
+.list ul li:nth-child(3) a{
+    color: rgb(5, 212, 223);
+  }
+.list ul li:nth-child(4) a{
+    color: rgb(93, 88, 239);
+  }
 nav #btn{
     border-radius: 8px;
     background: rgb(254, 163, 1);
