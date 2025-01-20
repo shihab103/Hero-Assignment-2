@@ -5,9 +5,6 @@
 body{
     font-family: "Quicksand", serif;
 }
-.hide{
-    display: none;
-}
 /* sheared section */
 .btn-primary{
     background: rgb(17, 17, 17);
@@ -15,6 +12,60 @@ body{
     color: #fff;
     border: none;
     padding: 10px 25px;
+}
+/* nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav .logo h1{
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+nav .list ul{
+    display: flex;
+    gap: 30px;
+}
+nav .list ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+nav #btn{
+    border-radius: 8px;
+    background: rgb(254, 163, 1);
+    padding: 10px 50px;
+}
+.nav{
+    display: none;
+}
+@media screen and (max-width:576px){
+    nav{
+        display: none;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+    }
+    .nav img{
+        width: 46px;
+        height: 46px;
+    }
+    .nav i{
+        width: 22.5px;
+        height: 15px;
+    }
 }
 /* hero section */
 .hero-section{
@@ -153,11 +204,13 @@ body{
 
 /* stories section */
 .stories-section{
-    background-image: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);;
-    text-align: center;
+    background-image: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 .stories-section button{
     margin-bottom: 70px;
+}
+#dv{
+    text-align: center;
 }
 .bx-1{
     grid-area: b1;
@@ -205,7 +258,7 @@ body{
     font-weight: 700;
     line-height: 28.76px;
     text-align-last: left;
-    padding-left: 38px;
+    padding-left: 20px;
     margin-top: 43px;
     padding-bottom: 33px;
 }
@@ -240,10 +293,90 @@ body{
         "b33 b34"
         "b4 b5";
         padding: 0 20px;
+        height: auto;
     }
     .stories h1{
         padding: 0 20px;
         padding-bottom: 20px;
         text-align: left;
+    }
+    .stories-section button{
+        margin-top: 70px;
+    }
+}
+/* footer section */
+
+footer{
+    height: 520px;
+    background: rgb(1, 172, 253);
+    align-content: center;
+    color: #fff;
+}
+footer section{
+    display: grid;
+    gap: 150px;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+footer section .fast>div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+footer section .fast h1{
+    font-size: 42.14px;
+    font-weight: 700;
+    line-height: 39.51px;
+}
+footer section .fast p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.second h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+.second ul li{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.second ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.third h1{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+@media screen and (max-width:576px){
+    footer section .fast div{
+        padding-top: 50px;
+    }
+    footer section .fast p{
+        text-align: left;
+        padding-right: 10px;
+    }
+    footer section{
+        margin-left: 20px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    footer{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .second ul li{
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
