@@ -69,6 +69,7 @@ nav #btn{
         justify-content: space-between;
         align-items: center;
         padding: 12px 20px;
+        border-bottom: 1px solid rgb(254, 163, 1);
     }
     .nav img{
         width: 46px;
@@ -130,6 +131,9 @@ nav #btn{
     }
     .hero{
         padding: 0 10px;
+    }
+    .text button{
+        margin-bottom: 50px;
     }
 }
 
@@ -215,6 +219,7 @@ nav #btn{
 }
 
 /* stories section */
+
 .stories-section{
     background-image: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
@@ -314,6 +319,9 @@ nav #btn{
     }
     .stories-section button{
         margin-top: 70px;
+    }
+    .stories-section > h1{
+        margin-bottom: 50px;
     }
 }
 /* footer section */
