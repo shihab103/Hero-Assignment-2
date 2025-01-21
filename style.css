@@ -132,8 +132,8 @@ nav #btn{
     .hero{
         padding: 0 10px;
     }
-    .text button{
-        margin-bottom: 50px;
+    .hero-section{
+        padding-bottom: 50px;
     }
 }
 
