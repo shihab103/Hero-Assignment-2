@@ -340,6 +340,7 @@ nav #btn{
         padding: 0 20px;
         padding-bottom: 20px;
         text-align: left;
+        line-height: 20px;
     }
     .stories-section button{
         margin-top: 70px;
